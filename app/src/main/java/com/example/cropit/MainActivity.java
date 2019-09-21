@@ -74,7 +74,7 @@ public class MainActivity extends BaseActivity implements UCropFragmentCallback 
     private int mStatusBarColor;
     private int mToolbarWidgetColor;
     ImageView img;
-
+//
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
