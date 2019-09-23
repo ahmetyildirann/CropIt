@@ -186,6 +186,7 @@ public class ResultActivity extends BaseActivity {
         inStream.close();
         outStream.close();
 
+        sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE,Uri.fromFile(saveFile)));
         showNotification(saveFile);
         Toast.makeText(this, R.string.notification_image_saved, Toast.LENGTH_SHORT).show();
         finish();
