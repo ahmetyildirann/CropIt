@@ -130,7 +130,7 @@ public class MainActivity extends BaseActivity implements UCropFragmentCallback 
 
 
     private void pickFromGallery() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN
+        if (Build.VERSION.SDK_INT >= 29
                 && ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE)
                 != PackageManager.PERMISSION_GRANTED) {
             requestPermission(Manifest.permission.READ_EXTERNAL_STORAGE,
@@ -177,6 +177,13 @@ public class MainActivity extends BaseActivity implements UCropFragmentCallback 
 
         options.setHideBottomControls(false);
         options.setFreeStyleCropEnabled(true);
+
+
+        options.setBrightnessEnabled(true);
+        options.setContrastEnabled(true);
+        options.setSaturationEnabled(true);
+        options.setSharpnessEnabled(true);
+
 
 
         //Color
