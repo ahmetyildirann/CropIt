@@ -31,5 +31,5 @@ dependencies {
 
 
 
-    implementation 'com.github.yalantis:ucrop:2.2.4-native'
+    implementation 'com.github.krokyze:ucropnedit:2.2.4'
 }
