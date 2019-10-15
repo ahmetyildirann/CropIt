@@ -190,7 +190,11 @@ public class ResultActivity extends BaseActivity {
         showNotification(saveFile);
         Toast.makeText(this, R.string.notification_image_saved, Toast.LENGTH_SHORT).show();
         finish();
+
+
+
     }
+
 
     private void showNotification(@NonNull File file) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
